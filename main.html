@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Glass4Sale</title>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/x-icon" href="/rrsi/img/favicon.png">
+    <link rel="icon" type="image/x-icon" href="/rrsi/img/favicon.ico">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="description" content="Great deals on glass pendants!">
+    <meta name="keywords" content="Glass, sale, pendants.">
+    <link rel="stylesheet" type="text/css" href="main.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <link href='http://fonts.googleapis.com/css?family=Nunito:400,300,700|Lato:400,700,300,100' rel='stylesheet' type='text/css'>
+
+
+
+    <!--<script type="text/javascript" src="/rrsi/js/main.js"></script>-->
+
+    <!-- get jQuery from the google apis -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- SLIDER REVOLUTION 4.x SCRIPTS  -->
+    <script type="text/javascript" src="/rrsi/js/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+    <script type="text/javascript" src="/rrsi/js/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+
+    <!-- SLIDER REVOLUTION 4.x CSS SETTINGS -->
+    
+    <!-- Latest compiled and minified CDN for Jasny Bootstrap  -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/css/jasny-bootstrap.min.css">
+</head>
+<body>
+<div class="wrapper">
+  <div class="heading">
+    <header>
+    <div class="main-menu">
+    <nav class="icon-header col-12">
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-reorder"></i>
+    </nav>
+    <nav class="nav-header col-12">
+	<ul>
+	    <li><a class="active" href ="main.html">Listings</a></li>
+	    <li><a href ="cart.html">Shopping Cart</a></li>
+	    <li><a href ="contact.html">Contact</a></li>
+	    <li><a href ="about.html">About Me</a></li>
+	</ul>
+    </nav>
+    <div/>
+    <div class="container-dropdown col-12 drop-menu">
+        <button onclick="dropdown()" class="dropbtn">Dropdown</button>
+        <div id="dropdown" class="dropdown-content">
+            <a href="main.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+    </header>
+  </div>
+   <div class="container container-listings">
+            <ul class="row">
+                <li class="col-3">
+                    <div class="container-img">
+                        <img id="product-image" class="center-img" src="../img/be_happy_dont_worry_1.JPG"  alt="image">
+                    </div>
+                    <div class="container-price">
+                        $10
+                        <i class="fa fa-shopping-cart"></i>
+                    </div>
+                </li>
+                <li class="col-3">
+                    <div class="container-img">
+                        <img id="product-image" class="center-img" src="../img/Chernobyl_leaf_2.JPG"  alt="image">
+                    </div>
+                    <div class="container-price">
+                        $20
+                        <i class="fa fa-shopping-cart"></i>
+                    </div>
+                </li>
+                <li class="col-3">
+                    <div class="container-img">
+                        <img id="product-image" class="center-img" src="../img/Chernobyl_tentacle_1.JPG"  alt="image">
+                    </div>
+                    <div class="container-price">
+                        $30
+                        <i class="fa fa-shopping-cart"></i>
+                    </div>
+                </li>
+                <li class="col-3">
+                    <div class="container-img">
+                        <img id="product-image" class="center-img" src="../img/honey_honeycomb_8.JPG"  alt="image">
+                    </div>
+                    <div class="container-price">
+                        $40
+                        <i class="fa fa-shopping-cart"></i>
+                    </div>
+                </li>
+                <li class="col-3">
+                    <div class="container-img">
+                        <img id="product-image" class="center-img" src="../img/feeler_cube_6.JPG"  alt="image">
+                    </div>
+                    <div class="container-price">
+                        $50
+                        <i class="fa fa-shopping-cart"></i>
+                    </div>
+                </li>
+            </ul>                
+    </div><!--listings-->
+</div><!--wrapper-->
+</body>
+<footer>
+<div class="container container-footer col-12 col-m-12">
+<p class="copyright_statement">Copyright &copy;2018  Refrigeration Recruiting Services, Inc.<br> All Rights Reserved. <strong>Equal Opportunity Employer.</strong></p>            
+</div>
+</footer>
+<script>
+$(function ()
+{
+    $('#product-image').on('click', function ()
+    {
+        $(this).width(1000);
+    });
+});
+</script>
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("dropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+</script>
+
+</html>
